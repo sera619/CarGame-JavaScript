@@ -1,0 +1,29 @@
+{
+    "manifest_version":2,
+    "version": "0.0.1",
+    "name": "Car Driving Game",
+    "description": "Nothing to see here, worktitle",
+    "background":{
+        "scripts": ["dist/js/main.js"]
+    },
+
+    "browser_action":{
+        "default_title": "Arbeitstitel",
+        "default_popup": "index.html"
+    },
+	"options_ui":{
+		"page": "game.html",
+		"open_in_tab": true,
+		"chrome_style": true
+	},
+    "permissions":[
+        "activeTab",
+        "storage",
+        "tabs",
+        "downloads",
+        "sessions"
+
+    ]
+
+
+}
